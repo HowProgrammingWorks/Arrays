@@ -1,0 +1,16 @@
+({
+  name: 'removeElement',
+  length: [80, 150],
+  test: removeElement => {
+    const array = ['Athens', 'Roma', 'London', 'Beijing', 'Kiev', 'Riga'];
+    removeElement(array, 'Roma');
+    removeElement(array, 'New York');
+    const expected = ['Athens', 'London', 'Beijing', 'Kiev', 'Riga'];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] !== expected[i]) {
+        const msg = `Expected array[${i}] === ${expected[i]}`;
+        throw new Error(msg);
+      }
+    }
+  }
+})
