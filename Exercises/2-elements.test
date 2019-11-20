@@ -1,0 +1,28 @@
+({
+  name: 'removeElements',
+  length: [100, 200],
+  test: removeElements => {
+    {
+      const array = [1, 2, 3, 4, 5, 6, 7];
+      removeElements(array, 5, 1, 6);
+      const expected = [2, 3, 4, 7];
+      const res = JSON.stringify(array);
+      const exp = JSON.stringify(expected);
+      if (res !== exp) {
+        const msg = `Result ${res} instead of expected ${exp}`;
+        throw new Error(msg);
+      }
+    }
+    {
+      const array = ['Kiev', 'Beijing', 'Lima', 'Saratov'];
+      removeElements(array, 'Lima', 'Berlin', 'Kiev');
+      const expected = ['Beijing', 'Saratov'];
+      const res = JSON.stringify(array);
+      const exp = JSON.stringify(expected);
+      if (res !== exp) {
+        const msg = `Result ${res} instead of expected ${exp}`;
+        throw new Error(msg);
+      }
+    }
+  }
+})
