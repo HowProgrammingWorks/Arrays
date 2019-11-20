@@ -1,8 +1,7 @@
 'use strict';
 
 const removeElement = (array, item) => {
-  // Remove item from array, modifying original array
-  // Don't return a value
+  // Remove item from array modifying original array
 };
 
 module.exports = { removeElement };
