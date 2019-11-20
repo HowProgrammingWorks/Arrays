@@ -1,0 +1,10 @@
+({
+  name: 'unique',
+  length: [100, 200],
+  cases: [
+    [[], []],
+    [[2, 1, 1, 3, 2], [2, 1, 3]],
+    [['top', 'bottom', 'top', 'left'], ['top', 'bottom', 'left']],
+    [[true, true, true], [true]],
+  ]
+})

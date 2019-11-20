@@ -1,0 +1,9 @@
+({
+  name: 'difference',
+  length: [100, 200],
+  cases: [
+    [[], [], []],
+    [[7, -2, 10, 5, 0], [0, 10], [7, -2, 5]],
+    [['Beijing', 'Kiev'], ['Kiev', 'London', 'Baghdad'], ['Beijing']],
+  ]
+})
