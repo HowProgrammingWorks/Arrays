@@ -1,8 +1,8 @@
 'use strict';
 
-// Find difference of two arrays
-// elements from array1 that are not includes in array2
-
-const difference = (array1, array2) => [];
+const difference = (array1, array2) => array1.filter(elem => {
+  const duplicate = array2.filter(el => el === elem);
+  return duplicate.length === 0;
+});
 
 module.exports = { difference };
