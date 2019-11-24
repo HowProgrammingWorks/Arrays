@@ -1,8 +1,8 @@
 'use strict';
 
 const removeElements = (array, ...items) => {
-  for (let i = 0; i < items.length; i++) {
-    const indItem = array.indexOf(items[i]);
+  for (const arg of items) {
+    const indItem = array.indexOf(arg);
     if (indItem !== -1) array.splice(indItem, 1);
   }
   return array;
