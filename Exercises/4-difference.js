@@ -1,8 +1,13 @@
 'use strict';
 
-const difference = (array1, array2) => array1.filter(elem => {
-  const duplicate = array2.filter(el => el === elem);
-  return duplicate.length === 0;
-});
+const difference = (array1, array2) => {
+  const arr = [];
+  for (const item of array1) {
+    const include = array2.includes(item);
+    if (!include) arr.push(item);
+  }
+  return arr;
+};
+
 
 module.exports = { difference };

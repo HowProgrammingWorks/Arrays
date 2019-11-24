@@ -3,8 +3,8 @@
 const unique = array => {
   const uniq = [];
   for (const item of array) {
-    const index = uniq.indexOf(item);
-    if (index < 0) uniq.push(item);
+    const include = uniq.includes(item);
+    if (!include) uniq.push(item);
   }
   return uniq;
 };
