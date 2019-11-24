@@ -1,7 +1,7 @@
 'use strict';
 
 const removeElement = (array, item) => {
-  const idx = array.findIndex(el => el === item);
+  const idx = array.indexOf(item);
   if (idx >= 0) array.splice(idx, 1);
 };
 

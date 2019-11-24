@@ -4,14 +4,10 @@
 // Don't modify initial array
 
 const unique = array => {
-  const table = {};
   const res = [];
-  array.forEach(el => {
-    if (!table[el]) {
-      table[el] = true;
-      res.push(el);
-    }
-  });
+  for (const el of array) {
+    if (res.indexOf(el) === -1) res.push(el);
+  }
   return res;
 };
 

@@ -1,10 +1,10 @@
 'use strict';
 
 const removeElements = (array, ...items) => {
-  items.forEach(item => {
-    const idx = array.findIndex(el => el === item);
+  for (const item of items) {
+    const idx = array.indexOf(item);
     if (idx >= 0) array.splice(idx, 1);
-  });
+  }
 };
 
 module.exports = { removeElements };
