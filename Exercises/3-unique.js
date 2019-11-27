@@ -3,7 +3,7 @@
 const unique = array => {
   const newArray = [];
   for (const item of array) {
-    !newArray.includes(item) ? newArray.push(item) : array;
+    if (!newArray.includes(item)) newArray.push(item);
   }
   return newArray;
 };
