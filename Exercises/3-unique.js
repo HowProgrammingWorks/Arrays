@@ -1,8 +1,11 @@
 'use strict';
 
-// Create and return a new array without duplicate elements
-// Don't modify initial array
-
-const unique = array => [];
+const unique = array => {
+  const newArray = [];
+  for (const item of array) {
+    !newArray.includes(item) ? newArray.push(item) : array;
+  }
+  return newArray;
+};
 
 module.exports = { unique };
