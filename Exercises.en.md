@@ -27,7 +27,7 @@ removeElements(array, 5, 1, 6);
 console.log(array);
 // Result: [2, 3, 4, 7]
 ```
-или
+or
 ```js
 const array = ['Kiev', 'Beijing', 'Lima', 'Saratov'];
 removeElements(array, 'Lima', 'Berlin', 'Kiev');
