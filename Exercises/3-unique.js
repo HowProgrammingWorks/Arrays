@@ -5,7 +5,7 @@
 
 const unique = array => {
   const newArr = [];
-  array.map(x => { if (!newArr.includes(x)) newArr.push(x); });
+  array.forEach(x => { if (!newArr.includes(x)) newArr.push(x); });
   return newArr;
 };
 
