@@ -1,7 +1,12 @@
 'use strict';
 
 const removeElements = (array, ...items) => {
-  // Remove multiple items from array modifying original array
+  for (const item of items) {
+    if (array.includes(item)) {
+      const index = array.indexOf(item);
+      array.splice(index, 1);
+    }
+  }
 };
 
 module.exports = { removeElements };
