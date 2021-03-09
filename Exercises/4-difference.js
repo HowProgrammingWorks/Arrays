@@ -1,8 +1,14 @@
 'use strict';
 
-// Find difference of two arrays
-// elements from array1 that are not includes in array2
 
-const difference = (array1, array2) => [];
+const difference = (array1, array2) => {
+  const diffArr = [];
+
+  array1.forEach((el) => {
+    if (!array2.includes(el)) diffArr.push(el);
+  });
+
+  return diffArr;
+};
 
 module.exports = { difference };

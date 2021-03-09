@@ -1,8 +1,8 @@
 'use strict';
 
-// Create and return a new array without duplicate elements
-// Don't modify initial array
-
-const unique = (array) => [];
+const unique = (array) => {
+  const filtered = array.filter((el, i) => i === array.indexOf(el));
+  return filtered;
+};
 
 module.exports = { unique };
