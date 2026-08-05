@@ -4,13 +4,13 @@
 // elements from array1 that are not includes in array2
 
 const difference = (array1, array2) => {
-  const array = [];
+  const result = [];
   for (const item of array1) {
     if (!array2.includes(item)) {
-      array.push(item);
+      result.push(item);
     }
   }
-  return array;
+  return result;
 };
 
 module.exports = { difference };
